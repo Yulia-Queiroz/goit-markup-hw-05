@@ -50,7 +50,7 @@
             
                 <div class="container">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button type="button" class="hero-button">Заказать услугу</button>
+                    <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
                 </div>
             
         </section>
@@ -119,12 +119,21 @@
                 <ul class="services list">
                     <li class="service-item">
                         <a href="" class="service link"><img src="./images/box1.jpg" alt="услуга 1" width="370"></a>
+                        <div class="service-thumb">
+                            Десктопные приложения
+                        </div>
                     </li>
                     <li class="service-item">
                         <a href="" class="service link"><img src="./images/box2.jpg" alt="услуга 2" width="370"></a>
+                        <div class="service-thumb">
+                            Мобильные приложения
+                        </div>
                     </li>
                     <li class="service-item">
                         <a href="" class="service link"><img src="./images/box3.jpg" alt="услуга 3" width="370"></a>
+                        <div class="service-thumb">
+                            Дизайнерские решения
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -386,9 +395,23 @@
                             </a></li>
                 
                         </ul>
-            
         </section>
         </div>
     </footer>
+
+    <!--Модальное окно-->
+
+    <div class="backdrop is-hidden" data-modal>
+<div class="modal">
+    
+    <button class="close-button-bg" data-modal-close>
+        <svg class="close-button">
+            <use href="./images/icons.svg#icon-close" class="close-svg"></use>
+        </svg>
+    </button>
+   
+</div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
